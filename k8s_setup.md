@@ -33,11 +33,7 @@ You can follow the same procedure in k8s official documentation. AWS document [G
 
    IAM user should have access to the following services
 
-   IAM
-   
-   EC2
-   
-   CloudFormation
+   IAM, EC2, CloudFormation & AdministorAccess
    
    Note: Check eksctl documentaiton for [Minimum IAM policies](https://eksctl.io/usage/minimum-iam-policies/)
 
