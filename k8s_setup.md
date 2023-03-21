@@ -30,10 +30,15 @@ You can follow the same procedure in k8s official documentation. AWS document [G
    ```
 
 3. Now create an IAM Role and attache it to EC2 instance
+
    IAM user should have access to the following services
+
    IAM
+   
    EC2
+   
    CloudFormation
+   
    Note: Check eksctl documentaiton for [Minimum IAM policies](https://eksctl.io/usage/minimum-iam-policies/)
 
 4. Now create your k8s cluster and nodes
