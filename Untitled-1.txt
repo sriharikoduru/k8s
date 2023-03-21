@@ -1,0 +1,31 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUMvakNDQWVhZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJek1ETXlNREV5TWprME1sb1hEVE16TURNeE56RXlNamswTWxvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBSndvCjdEVkpsOEUwV1RQQWI3N2ZScDhoU29VeU1PMldkc1dWSVBWcmlTNFIva1pHVngrUG5vdFJvbTlhdVpkR3lqTzgKT1hoTnUyVlllN2ZBL043ZFpQYWNCMXVyZ0w1U0xDWmlDL3R6N3dsR2VaYXM4dXhIaDFNd3JTRU5vcHR0ZzUwTgp4ZjRBY0RVMnhWL3h3RHI1U0dsSERId2NJdlJ3TWludWtIMjQ1S1VkS2U0a1N1ZEVjZnR6TXpXTFhER3Vna1ppCkdRRXF2ZVZQSFNzTXZLaDRPRjhEdFVLbkwrelllWE5OY0JFdGFQL1hoVTdrT1hwZkpkVDBwTUxOazY1VHh6YncKYTZsMnRERmFKVlRsOXFIbUZoak9UOERZcSs5aUhqdFlFd2Q0ZWxsUnFKelVTb0dWSGlZNzhKVEZyWXV0bU9tdwo4cEp5bStncHFLSGNjcGpRVjhFQ0F3RUFBYU5aTUZjd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZEUHdUdXNBeGJoZ3dBN21Uc1o2TWU1dHJwTWdNQlVHQTFVZEVRUU8KTUF5Q0NtdDFZbVZ5Ym1WMFpYTXdEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBRXRmcm9HNWlPbXZ1SS9YRXdregplaHZxdjBva21ndkpHNmI1cGh6MUtweVdEcTliYVZvUk4wcjZIZ1NxZ2lZSE1jdm8yb3l2eFRLZjVvUU5IeTdKCitNK2ZJWEZKcHA5R2RwT09yalhzcnY4czZKVTJpMExzMDhtMXU3L0J3dFRHUTBJejlJN3VlYmg0MWlFRDFpNUQKVDRKQVo0dmk5N1ZURTk5WDhKaVRveWxveW1UOUhPZHRlTTdKMVB2bkVOTW8rK3pvWEFjUlVPQkIzVkdzK21xRwpoS0hjUTZiR3dzN3V0Vlp5Y0FUR0xBd2hkTVRYd1ljY2orZXJUaDBBMkRheHYvU3c4WTNXN2JKUnVjRExZZklLCko0VURUU2tBRzhBZmgvd3c1MDl5eVorSmppKzMrQ3BJRVpNSWpmN1ZCbjI2eUh6ZmwwVjBQZzVUWnFaUWEzUWEKa0RzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://4E6347C305BC746DA3920771171DAB4E.gr7.us-east-2.eks.amazonaws.com
+  name: dhanvantarisoftware.us-east-2.eksctl.io
+contexts:
+- context:
+    cluster: dhanvantarisoftware.us-east-2.eksctl.io
+    user: i-00c180743a82f6d95@dhanvantarisoftware.us-east-2.eksctl.io
+  name: i-00c180743a82f6d95@dhanvantarisoftware.us-east-2.eksctl.io
+current-context: i-00c180743a82f6d95@dhanvantarisoftware.us-east-2.eksctl.io
+kind: Config
+preferences: {}
+users:
+- name: i-00c180743a82f6d95@dhanvantarisoftware.us-east-2.eksctl.io
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1beta1
+      args:
+      - eks
+      - get-token
+      - --cluster-name
+      - dhanvantarisoftware
+      - --region
+      - us-east-2
+      command: aws
+      env:
+      - name: AWS_STS_REGIONAL_ENDPOINTS
+        value: regional
+      provideClusterInfo: false
