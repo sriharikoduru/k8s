@@ -9,8 +9,8 @@ metadata:
 
 spec:
   containers:
-    - name: my-container
+  - name: my-container
       image: dhanvantarisoftware/dhanvantari-image
       ports:
-        - name: my-container
-          containerPort: 8080
+      - name: my-container
+        containerPort: 8080
