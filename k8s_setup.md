@@ -7,10 +7,10 @@ Please click on this link to download AWS CLI based upong your Operating System 
   - EC2 Instance (t2.small)
   - Install AWSCLI latest verison in the EC2 Instance
 
-1. Setup kubectl
-   a. Download latest kubectl version 1.25
-   b. Grant execution permissions for kubectl as a executable
-   c. Move kubectl onto /usr/local/bin
+1. Setup kubectl \
+   a. Download latest kubectl version 1.25 \
+   b. Grant execution permissions for kubectl as a executable \
+   c. Move kubectl onto /usr/local/bin \
    d. Test that your kubectl installation was successful or not by using the command kubectl version --short --client
 
    ```sh
@@ -19,9 +19,9 @@ Please click on this link to download AWS CLI based upong your Operating System 
    mv ./kubectl /usr/local/bin
    kubectl version --short --client
    ```
-2. Setup eksctl
-   a. Download and extract the latest release of eksctl
-   b. Move the extracted binary to /usr/local/bin
+2. Setup eksctl \
+   a. Download and extract the latest release of eksctl \
+   b. Move the extracted binary to /usr/local/bin \
    c. Test that your eksctl installation was successful by using the command eksctl version
 
    ```sh
@@ -73,7 +73,7 @@ Please click on this link to download AWS CLI based upong your Operating System 
     ```
     ### By using the above syntax we will deploy our own developed application as follows
     ```sh
-    kubectl deployment mydeployment --image=dhanvantarisoftware/dhanvantari-image --replicas=4 --port=8080
+    kubectl create deployment mydeployment --image=dhanvantarisoftware/dhanvantari-image --replicas=4 --port=8080
     kubectl get all
     kubectl get pod
    ```
